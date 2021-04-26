@@ -1,0 +1,92 @@
+<!-- 
+    Name: Truman Elder
+    Date: 25APR21
+    Course: CIS155
+    Instructor: Professor Epps
+    Assignment: Module 2 Project V1
+    Notes: This is the about page for my website. I'll be describing the website and adding updates here.
+
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="travel, blog, space, exploration, No Man's Sky" />
+    <meta name="author" content="Truman Elder" />
+    <meta name="description" content="About page of the Boldly Going travel blog." />
+    <title>Boldly Going About Page</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        footer {
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+    <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+    <!--This is an example of using embedded style to modify an html document without the use of a css document-->
+</head>
+
+<body>
+    <header>
+        <img src="boldly_going_banner.jpg" alt="Boldly Going" />
+        <nav>
+            <h1>Navigation Console</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="systems.html">Systems</a></li>
+
+                <li id="planets">Ompandy</li>
+                <li>Nagene Gamma</li>
+                <li>Opalmar Major</li>
+                <li>Geistole</li>
+                <li>Sacyt</li>
+            </ul>
+        </nav>
+        <h1>About Page</h1>
+    </header>
+
+    <article>
+        <p>
+            Greetings fellow explorers! My name is Truman and I present to you the beginnings of the Boldly Going travel blog. This is being made as a part of my CIS155 course. Today's date is 25APR21. This is version 1 of my site. A list of changes will be available below.
+        </p>
+
+        <p>
+            Available on index.html is just the navigation console to be used as site navigation. There is also a picture which is just a placeholder for a future image that will be involved in navigation from the home page. Available on about.html is a description of the site and credits. Available on systems.html is a few images of systems visisted and page navigation.
+        </p>
+
+        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+        <!--This is an example of an external hyperlink-->
+        <p>
+            <strong><a id="website" href="https://www.nomanssky.com/">No Man's Sky</a></strong> is a space themed game set in a fictional universe. It procedurally generated some 18 quintillion planets in this galaxy along with everything on those planets. Pretty cool stuff! You can click on No Man's Sky at the beginning of this paragraph to check out their website and purchase the game if you're interested.
+        </p>
+    </article>
+
+    <!--M1LO7 Demonstrate the use of ordered lists (HTML)-->
+    <!--Below is my use of ordered lists-->
+
+    <aside>
+        <ol>
+            <li>Developed index.html as home page.</li>
+            <li>Developed about.html</li>
+            <li>Developed styles.css</li>
+            <li>Created and developed systems.html</li>
+        </ol>
+    </aside>
+
+    <footer>
+        <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+        <!--This is my use of inline style to modify a single h2 tag-->
+        <h2 style="color:darkred; text-align: center; opacity: 0.7;">Credit</h2>
+        <p>
+            <strong>Media</strong>: All media is captured by me in No Man's Sky. &hybull; <cite>Sony Computer Entertainment., & Hello Games (Firm). (2016). No man's sky.</cite>
+        </p>
+        <p>
+            <strong>Fonts</strong>: The Geo font included in this site is from google fonts. &hybull; <cite>Geo-Regular.ttf: Copyright &copy; 2000-2010, Ben Weiner (ben@readingtype.org.uk), with Reserved Font Name Geo.</cite> &hybull; <cite>Geo-Italic.ttf: Copyright &copy; 2000-2010, Ben Weiner (ben@readingtype.org.uk), with Reserved Font Name Geo.</cite>
+        </p>
+        <!--M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)-->
+        <!--I use the hybull characters to transition from my text to the cited text and use the copy symbol in place of the (C)s that were originally there-->
+    </footer>
+</body>
+
+</html>

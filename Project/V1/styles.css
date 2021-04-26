@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Geo;
+    src: url('Geo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Geo;
+    src: url('Geo-Italic.ttf') format('truetype');
+    font-weight: italic;
+}
+/*
+    Name: Truman Elder
+    Date: 25APR21
+    Course: CIS155
+    Instructor: Professor Epps
+    Assignment: Module 2 Project V1
+    Notes: This will be the styles page for my website. I want to move towards a Star Trek sort of theme/color scheme.
+*/
+
+html {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: steelblue;
+}
+
+h1, h2, h3 {
+    font-family: Geo, sans;
+    font-style: italic;
+    color: mediumturquoise;
+    color: hsla(178, 60%, 55%, 0.7);
+    background-color: peru;
+    text-align: center;
+}
+
+/*M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)*/
+/*Above and below are my 2 different uses of contextual selectors*/
+
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)*/
+/*I use font-family and font-style to change the look of the text in my h1, h2, and h3 tags*/
+
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)*/
+/*In my h1,h2,h3 selector, I use mediumturquoise as the color to support older browsers and hsla later to be applied*/
+
+/*M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)*/
+/*In many of my selectors, I apply colors to text and backgrounds*/
+
+nav > ul{
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: none;
+    color: wheat;
+    text-align: center;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    color:wheat;
+    text-decoration: none;
+}
+
+nav > ul > li:nth-of-type(3) {
+    padding-top: 10px;
+}
+
+/*M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)*/
+/*I modify the padding to create space in my ul*/
+
+ul.systems {
+    list-style-type: none;
+}
+
+/*M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)*/
+/*Above and below I use an id and class selector respectively*/
+
+ul#nav_systems {
+    text-align: center;
+}
+
+ul#nav_systems > li > a:link, ul#nav_systems > li > a:visited {
+    color: thistle;
+    text-decoration: none;
+}
+
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)*/
+/*a:link is my use of the pseudo-classes selector*/
+
+article img[id] {
+    padding-bottom: 30px;
+}
+
+/*M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time, see 2-9b Attribute selectors)*/
+/*img[id] is my demonstration of an attribute selector other than class or id*/
+
+a#website {
+    font-family: Geo, sans;
+}
+
+a#website::before {
+    content:url("nms_icon.png");
+}
+
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)*/
+/*I use ::before to insert an icon next to the hyperlink*/
