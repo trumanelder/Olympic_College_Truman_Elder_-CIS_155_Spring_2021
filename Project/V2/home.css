@@ -1,0 +1,19 @@
+/*
+    Name: Truman Elder
+    Date: 10JUN21
+    Course: CIS155
+    Instructor: Professor Epps
+    Assignment: Project V4
+    Notes: This will be the styles page for index.html
+*/
+
+figure {
+    width: 80%;
+    margin: 0% auto;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    transform: scale(75%, 75%);
+}

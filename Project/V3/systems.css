@@ -1,0 +1,73 @@
+/*
+    Name: Truman Elder
+    Date: 10JUN21
+    Course: CIS155
+    Instructor: Professor Epps
+    Assignment: Project V4
+    Notes: This will be the styles page for the systems html pages.
+*/
+
+body > article {
+    width: 80%;
+    margin: 0% auto;
+    float: none;
+}
+
+body > img {
+    width: 50%;
+    margin-left: 25%;
+}
+
+aside.flora {
+    width: 30%;
+    float: left;
+    margin: 0% 1%;
+}
+
+aside.fauna {
+    width: 30%;
+    clear: left;
+    margin: 0% 1%;
+}
+
+article > aside > p {
+    height: 15em;
+    overflow: scroll;
+}
+
+img.planetPhoto {
+    display: block;
+    width: 5%;
+    float: left;
+}
+
+body > footer{
+    width: 100%;
+    margin: 1% auto;
+    padding-top: 1em;
+}
+
+footer > ul {
+    width: 30%;
+    margin: 0% auto;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    body > img {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    aside.flora {
+        width: 90%;
+    }
+    
+    aside.fauna {
+        width: 90%;
+    }
+    
+    img.planetPhoto {
+        width: 15%;
+    }
+}
