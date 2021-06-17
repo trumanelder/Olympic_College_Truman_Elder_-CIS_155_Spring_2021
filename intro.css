@@ -1,0 +1,37 @@
+/*
+    Name: Truman Elder
+    Date: 16JUN21
+    Course: CIS155
+    Instructor: Professor Epps
+    Assignment: Project V4
+    Notes: This will be the styles page for introduction.html
+*/
+
+table {
+    background:linear-gradient(rgb(39, 94, 139), rgb(49, 156, 156));
+    color: rgb(0, 0, 0);
+    border: 5px solid teal;
+    margin: 0% auto;
+}
+
+table th {
+    padding: 0.1em;
+}
+
+table th, td {
+    border: 2px dotted darkslategray;
+    text-align: center;
+}
+
+footer {
+    width: 50%;
+    margin: 0% auto;
+    padding: 5% 0%;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    article:last-of-type {
+        display: none;
+    }
+}
